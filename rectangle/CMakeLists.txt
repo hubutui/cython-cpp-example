@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.15)
+project(rectangle VERSION 0.1.0)
+option(BUILD_SHARED_LIBS "build shared libs" ON)
+add_library(${PROJECT_NAME})
+target_sources(${PROJECT_NAME} PRIVATE Rectangle.cpp INTERFACE Rectangle.h)
